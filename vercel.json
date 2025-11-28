@@ -3,8 +3,7 @@
   "builds": [
     {
       "src": "server/index.js",
-      "use": "@vercel/node",
-      "config": { "zeroConfig": true }
+      "use": "@vercel/node"
     }
   ],
   "routes": [
@@ -12,8 +11,5 @@
       "src": "/(.*)",
       "dest": "server/index.js"
     }
-  ],
-  "env": {
-    "MONGODB_URI": "@mongodb_uri"
-  }
+  ]
 }
